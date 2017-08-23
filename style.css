@@ -1,0 +1,29 @@
+.padded-multiline span {
+    background-color: black;
+    color: #fff;
+    display: inline;
+    padding: 0.5rem;
+    /* Needs prefixing */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    left: 0;
+    line-height: 170px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', cursive;
+    font-size: 9em;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    color: rgba(255, 255, 255, 0.9);
+}

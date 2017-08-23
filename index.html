@@ -1,7 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+
+<head>
+    <!--
+    Remember to never show something to your friends :P
+    web.ist.utl.pt/ist187634/
+    -->
+    <meta charset=utf-8>
+    <title>hello</title>
+    <script type="text/javascript">
+        function clickBody() {
+            location.reload();
+            // changeIt();
+        }
+
+        function setWindowHeight() {
+            var windowHeight = window.innerHeight;
+            document.body.style.height = (windowHeight - 20) + "px";
+            // console.log(document.body.style.height);
+        }
+        var totalCount = 34;
+
+        function changeIt() {
+
+            var num = Math.ceil(Math.random() * totalCount);
+            document.body.background = 'images/' + num + '.gif';
+            document.body.style.backgroundSize = "cover"; // Background repeat
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundAttachment = "fixed";
+            document.body.style.backgroundPosition = "center";
+        }
+
+        function animationText() {
+            var animations = ["bounce", "flash", "pulse", "wobble", "jello", "bounceIn", "fadeIn", "fadeInDown", "flipInX", "flipInY", "lightSpeedIn", "rotateIn",
+                "jackInTheBox", "rollIn", "zoomIn", "slideInDown", "slideInUp", "rubberBand"
+            ]
+            var numClass = Math.ceil(Math.random() * (animations.length - 1));
+            var h1 = document.getElementsByTagName("h1");
+            for (i = 0; i < h1.length; i++) {
+                h1[i].className += animations[numClass];
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+    <a href="">
+        <h1 class="padded-multiline animated " +>
+            <span>hello i'm esteves</span>
+        </h1>
+    </a>
+    <script type="text/javascript">
+        animationText();
+        changeIt();
+        setWindowHeight();
+        document.body.addEventListener("click", clickBody);
+        window.addEventListener("resize", setWindowHeight, false);
+    </script>
+</body>
+
 </html>
