@@ -1,63 +1,23 @@
-<!doctype html>
-<html>
+---
+layout: page
+title: 
+subtitle:
+sitemap:
+  priority: 0.9
+---
 
-<head>
-    <meta charset=utf-8>
-    <title>hello</title>
-    <script type="text/javascript">
-        function clickBody() {
-            location.reload();
-            // changeIt();
-        }
+<ul class="list-posts">
+    {% for post in site.posts %}
+        <li class="post-teaser">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <span class="post-teaser__title">{{ post.title }}</span>
+                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
 
-        function setWindowHeight() {
-            var windowHeight = window.innerHeight;
-            document.body.style.height = (windowHeight - 20) + "px";
-            // console.log(document.body.style.height);
-        }
-        var totalCount = 34;
-
-        function changeIt() {
-
-            var num = Math.ceil(Math.random() * totalCount);
-            document.body.background = 'images/' + num + '.gif';
-            document.body.style.backgroundSize = "cover"; // Background repeat
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundAttachment = "fixed";
-            document.body.style.backgroundPosition = "center";
-        }
-
-        function animationText() {
-            var animations = ["bounce", "flash", "pulse", "wobble", "jello", "bounceIn", "fadeIn", "fadeInDown", "flipInX", "flipInY", "lightSpeedIn", "rotateIn",
-                "jackInTheBox", "rollIn", "zoomIn", "slideInDown", "slideInUp", "rubberBand"
-            ]
-            var numClass = Math.ceil(Math.random() * (animations.length - 1));
-            var h1 = document.getElementsByTagName("h1");
-            for (i = 0; i < h1.length; i++) {
-                h1[i].className += animations[numClass];
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-
-</head>
-
-<body>
-    <a href="">
-        <h1 class="padded-multiline animated " +>
-            <span>hello i'm esteves</span>
-        </h1>
-    </a>
-    <script type="text/javascript">
-        animationText();
-        changeIt();
-        setWindowHeight();
-        document.body.addEventListener("click", clickBody);
-        window.addEventListener("resize", setWindowHeight, false);
-    </script>
-</body>
-
-</html>
+<!-- Adding the glitch effect -->
+<script>document.getElementsByTagName('body')[0].getElementsByClassName('wrapper')[0].getElementsByClassName('header')[0].getElementsByClassName('navigation')[0].children[0].classList.add('glitch');</script>
+<!-- redirect to projects -->
+<script> window.location.replace("{{ '/projects' | prepend: site.baseurl }}"); </script>
