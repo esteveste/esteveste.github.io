@@ -1,63 +1,32 @@
-<!doctype html>
-<html>
+---
+layout: default
+title: Home
+---
 
-<head>
-    <meta charset=utf-8>
-    <title>hello</title>
-    <script type="text/javascript">
-        function clickBody() {
-            location.reload();
-            // changeIt();
-        }
+<div class="catalogue">
+  {% for post in paginator.posts %}
+    <a href="{{ post.url | prepend: site.url }}" class="catalogue-item">
+      <div>
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
 
-        function setWindowHeight() {
-            var windowHeight = window.innerHeight;
-            document.body.style.height = (windowHeight - 20) + "px";
-            // console.log(document.body.style.height);
-        }
-        var totalCount = 34;
+        <p>
+          {{ post.content | truncatewords: 30 | strip_html }}
+        </p>
 
-        function changeIt() {
-
-            var num = Math.ceil(Math.random() * totalCount);
-            document.body.background = 'images/' + num + '.gif';
-            document.body.style.backgroundSize = "cover"; // Background repeat
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundAttachment = "fixed";
-            document.body.style.backgroundPosition = "center";
-        }
-
-        function animationText() {
-            var animations = ["bounce", "flash", "pulse", "wobble", "jello", "bounceIn", "fadeIn", "fadeInDown", "flipInX", "flipInY", "lightSpeedIn", "rotateIn",
-                "jackInTheBox", "rollIn", "zoomIn", "slideInDown", "slideInUp", "rubberBand"
-            ]
-            var numClass = Math.ceil(Math.random() * (animations.length - 1));
-            var h1 = document.getElementsByTagName("h1");
-            for (i = 0; i < h1.length; i++) {
-                h1[i].className += animations[numClass];
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-
-</head>
-
-<body>
-    <a href="">
-        <h1 class="padded-multiline animated " +>
-            <span>hello i'm esteves</span>
-        </h1>
+      </div>
     </a>
-    <script type="text/javascript">
-        animationText();
-        changeIt();
-        setWindowHeight();
-        document.body.addEventListener("click", clickBody);
-        window.addEventListener("resize", setWindowHeight, false);
-    </script>
-</body>
+  {% endfor %}
+</div>
 
-</html>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.url }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.url }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <span>{{ paginator.page }}</span>
+</div>
