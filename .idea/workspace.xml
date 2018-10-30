@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec7238ae-1681-4032-818e-1c35fa6d1ed3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/categories.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/category/title.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/externals/disqus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/externals/google_analytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/externals/scripting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/externals/styling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/meta_tags/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/meta_tags/sharing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/page/explore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/page/title.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/post/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/post/title.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_404.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_default.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/css/font-awesome.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/agate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/androidstudio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/arta.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/ascetic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-cave.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-cave.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-dune.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-dune.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-estuary.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-estuary.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-forest.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-forest.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-heath.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-heath.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-lakeside.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-lakeside.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-plateau.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-plateau.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-savanna.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-savanna.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-seaside.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-seaside.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-sulphurpool.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/atelier-sulphurpool.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/brown_paper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/brown_papersq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/codepen-embed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/color-brewer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/darkula.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/docco.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/far.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/foundation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/github-gist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/github.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/googlecode.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/grayscale.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/hopscotch.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/hybrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/idea.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/ir_black.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/kimbie.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/kimbie.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/magula.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/mono-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/monokai.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/monokai_sublime.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/obsidian.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/paraiso.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/paraiso.light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/pojoaque.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/pojoaque.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/railscasts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/rainbow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/school_book.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/school_book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/solarized_dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/solarized_light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/sunburst.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/tomorrow-night-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/tomorrow-night-bright.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/tomorrow-night-eighties.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/tomorrow-night.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/tomorrow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/vs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/xcode.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/highlight/styles/zenburn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/normalize-css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/design.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/productivity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/tools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts_backup/2015-09-08-sample-post.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts_backup/2017-03-16-example-content.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1521284862">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="706" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="706" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="154" column="42" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="y" value="27" />
+    <option name="width" value="960" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="esteveste.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esteveste.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esteveste.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esteveste.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec7238ae-1681-4032-818e-1c35fa6d1ed3" name="Default Changelist" comment="" />
+      <created>1540927079886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540927079886</updated>
+      <workItem from="1540927083815" duration="7322000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7322000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6348" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="154" column="42" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
