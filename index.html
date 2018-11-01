@@ -9,61 +9,112 @@
     <script src="utils/Detector.js"></script>
     <script src="utils/gyronorm.complete.min.js"></script>
 
+    <link rel="stylesheet" href="css/master.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
     <!--<link rel="icon" sizes="192x192" href="nice-highres.png">-->
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
-    <style>
-        body {
-            margin: 0 0;
-            overflow: hidden;
-            background-color: black;
-        }
-    </style>
 </head>
 
 <body>
-    <span id="title" style="
-    font-size: 6em;
-    color: black;
+<span id="title" style="
+    font-size: 7vh;
+    color: white;
     position: absolute;
-    font-weight: 800;
+    font-weight: 400;
     font-family: monospace;
     padding-left: 4vh;
-    top: 2vh;
-    ">esteves</span>
-    <span id="title2" style="
-    font-size: 6em;
+    top: 1.5vh;
+    display: none;
+    ">bernardo</span>
+<span id="title2" style="
+    font-size: 7vh;
     color: white;
     position: absolute;
     font-weight: 800;
     font-family: monospace;
     padding-left: 4vh;
-    top: 2vh;
+    top: 7vh;
+    display: none;
     ">esteves</span>
+
+    <div class="b_div" style="
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 12vh;
+    padding-left: 5vh;
+    padding-right: 3vh;
+    ">
+        <h2 style="
+    font-size: 4vh;
+    color: white;
+    /*position: absolute;*/
+    font-weight: 400;
+    font-family: monospace;
+    /*padding-left: 4vh;*/
+    /*top: 2vh;*/
+    /*display: none;*/
+    "><a>Projects</a></h2>
+    </div>
+<div class="b_div" style="
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 12vh;
+    left:27vh;
+    padding-left: 3vh;
+    padding-right: 5vh;
+    ">
+    <h2 class="a" style="
+    font-size: 4vh;
+    color: white;
+    /*position: absolute;*/
+    font-weight: 400;
+    font-family: monospace;
+
+    /*text-decoration: underline;*/
+    /*padding-left: 4vh;*/
+    /*top: 2vh;*/
+    /*display: none;*/
+    "><a>About Me</a></h2>
+</div>
+
+    <!--<span id="title2" style="-->
+    <!--font-size: 6em;-->
+    <!--color: white;-->
+    <!--position: absolute;-->
+    <!--font-weight: 800;-->
+    <!--font-family: monospace;-->
+    <!--padding-left: 4vh;-->
+    <!--top: 2vh;-->
+    <!--">esteves</span>-->
 <!--<script>-->
     <!--init()-->
 <!--</script>-->
 <script>
-    setTimeout(()=>$('#title2').fadeOut(2500),3000);
-
-    var isOver = false;
-    function out(){
-        if(isOver==false){
-            $('#title2').fadeOut();
-            // $('#logo1').fadeIn();
-        }
-    }
+    setTimeout(()=>$('#title').fadeIn(1500),1000);
+    setTimeout(()=>$('#title2').fadeIn(1500),1500);
+    // $("#title").fadeIn(2500);
+    // var isOver = false;
+    // function out(){
+    //     if(isOver==false){
+    //         $('#title2').fadeOut();
+    //         // $('#logo1').fadeIn();
+    //     }
+    // }
     $('span').on({
         mouseenter: function(){
             isOver = true;
             // $('#logo1').fadeOut();
-            $('#title2').fadeIn();
+            // $('#title2').fadeIn();
         },
         mouseout: function(){
             isOver = false;
-            setTimeout(out,1000);
+            // setTimeout(out,1000);
         }
     });
     if ( ! Detector.webgl ) {
@@ -151,23 +202,26 @@
         mouseY = ( event.clientY - windowHalfY );
     }
 
-    function fade() {
+    function fadeOutCanvas() {
         document.removeEventListener('mousemove', onDocumentMouseMove, false);
         setTimeout(()=>$('canvas').fadeOut(2500),500);
+
+        // $('canvas').css("z-index",100);
+
         let timer = setInterval(function() {
             if (mouseX>=windowHalfX && mouseY>=windowHalfY){
                 clearInterval(timer);
-                document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-
-                setTimeout(()=>$('canvas').fadeIn(2000),5000);
             }
             else{
                 mouseX+=10;
                 mouseY+=10;
             }
-        }, 20); // change by 2px every 20ms, about 50 frames per second
+        }, 20);
     }
-    
+    function fadeInCanvas() {
+        document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+        $('canvas').fadeIn(2000);
+    }
     
     //GYRO
     var gn = new GyroNorm();
