@@ -29,6 +29,7 @@
     padding-left: 4vh;
     top: 1.5vh;
     display: none;
+    z-index: 100;
     ">bernardo</span>
 <span id="title2" style="
     font-size: 7vh;
@@ -39,6 +40,7 @@
     padding-left: 4vh;
     top: 7vh;
     display: none;
+    z-index: 100;
     ">esteves</span>
 
     <div class="b_div" style="
@@ -48,6 +50,7 @@
     height: 12vh;
     padding-left: 5vh;
     padding-right: 3vh;
+        z-index: 100;
     ">
         <h2 style="
     font-size: 4vh;
@@ -58,6 +61,7 @@
     /*padding-left: 4vh;*/
     /*top: 2vh;*/
     /*display: none;*/
+
     "><a>Projects</a></h2>
     </div>
 <div class="b_div" style="
@@ -68,6 +72,7 @@
     left:27vh;
     padding-left: 3vh;
     padding-right: 5vh;
+        z-index: 100;
     ">
     <h2 class="a" style="
     font-size: 4vh;
@@ -141,7 +146,7 @@
 
     function setup() {
         var W = window.innerWidth, H = window.innerHeight;
-        renderer = new THREE.WebGLRenderer( { preserveDrawingBuffer: true } );
+        renderer = new THREE.WebGLRenderer( { preserveDrawingBuffer: true,alpha: true } );
         renderer.autoClearColor = false;
         renderer.setSize( W, H );
         document.body.appendChild( renderer.domElement );
@@ -204,7 +209,8 @@
 
     function fadeOutCanvas() {
         document.removeEventListener('mousemove', onDocumentMouseMove, false);
-        setTimeout(()=>$('canvas').fadeOut(2500),500);
+        $('canvas').css("z-index","-100");
+        setTimeout(()=>$('canvas').fadeOut(1000),1000);
 
         // $('canvas').css("z-index",100);
 
