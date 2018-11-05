@@ -62,30 +62,68 @@
     /*top: 2vh;*/
     /*display: none;*/
 
-    "><a>Projects</a></h2>
+    " onclick="changeFade()"><a>Projects</a></h2>
     </div>
-<div class="b_div" style="
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    height: 12vh;
-    left:27vh;
-    padding-left: 3vh;
-    padding-right: 5vh;
-        z-index: 100;
-    ">
-    <h2 class="a" style="
-    font-size: 4vh;
+<!--<div class="b_div" style="-->
+    <!--background-color: black;-->
+    <!--position: absolute;-->
+    <!--bottom: 0;-->
+    <!--height: 12vh;-->
+    <!--left:27vh;-->
+    <!--padding-left: 3vh;-->
+    <!--padding-right: 5vh;-->
+        <!--z-index: 100;-->
+    <!--">-->
+    <!--<h2 class="a" style="-->
+    <!--font-size: 4vh;-->
+    <!--color: white;-->
+    <!--/*position: absolute;*/-->
+    <!--font-weight: 400;-->
+    <!--font-family: monospace;-->
+
+    <!--/*text-decoration: underline;*/-->
+    <!--/*padding-left: 4vh;*/-->
+    <!--/*top: 2vh;*/-->
+    <!--/*display: none;*/-->
+    <!--"><a>About Me</a></h2>-->
+<!--</div>-->
+<div style="
+/*flex: 1;*/
+position: absolute;
+height: 100%;
+width: 100%;
+/*background-color: blue;*/
+z-index: -5;
+margin-top: 15vh;
+">
+    <div style="
+/*background-color: red;*/
+height: 10vh;
+margin: 0 20vw;
+padding-top: 20vh;
+
+">
+        <h3  class="a proj" style="
+            font-size: 4vh;
     color: white;
     /*position: absolute;*/
-    font-weight: 400;
+    font-weight: 900;
     font-family: monospace;
+    text-align: center;
+"><a href="https://esteveste.github.io/Chess_Google_Assistant_Contest/">Chess Mate</a></h3>
+        <h3  class="a proj" style="
+            font-size: 4vh;
+    color: white;
+    /*position: absolute;*/
+    font-weight: 900;
+    font-family: monospace;
+    text-align: center;
+"><a href="https://faceist.herokuapp.com/">Face IST</a></h3>
+</div>
 
-    /*text-decoration: underline;*/
-    /*padding-left: 4vh;*/
-    /*top: 2vh;*/
-    /*display: none;*/
-    "><a>About Me</a></h2>
+
+
+
 </div>
 
     <!--<span id="title2" style="-->
@@ -298,6 +336,19 @@
     }
     setup();
     draw();
+
+    let isfaded=false;
+    $(".proj").css("display","none");
+    function changeFade() {
+        if(isfaded){
+            fadeInCanvas();
+            $(".proj").fadeOut(2500);
+        }else {
+            $(".proj").fadeIn(2500);
+            fadeOutCanvas();
+        }
+        isfaded=!isfaded;
+    }
 </script>
 </body>
 
