@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript">
+		var host = "esteveste.github.io"
+		if (window.location.host == host && window.location.protocol != "https:") {
+			window.location.protocol = "https:"
+		}
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Hello">
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+
+	<title>Projects</title>
+	<!-- Favicon to work in all desktop browsers: -->
+	<link rel="shortcut icon" sizes="192x192" href="../resources/icon.png" type="image/png">
+	<meta name="theme-color" content="#3CD3AD">
+
+	<!-- Open Graph data -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Esteveste">
+	<meta property="og:url" content="https://esteveste.github.io">
+
+	<link rel="stylesheet" type="text/css" href="css/mainCard.css">
+	<link rel="stylesheet" type="text/css" href="css/other.css">
+	<link rel="stylesheet" type="text/css" href="css/background.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="utils/jquery.ui.touch-punch.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.js"></script>
+	<script src="utils/OrbitControls.js"></script>
+
+</head>
+
+<body>
+	<span id="title" style="
+		font-size: 7vh;
+		color: white;
+		position: absolute;
+		font-weight: 400;
+		font-family: monospace;
+		padding-left: 4vh;
+		top: 1.5vh;
+		z-index: 1;
+		">bernardo</span>
+	<span id="title2" style="
+		font-size: 7vh;
+		color: white;
+		position: absolute;
+		font-weight: 800;
+		font-family: monospace;
+		padding-left: 4vh;
+		top: 7vh;
+		z-index: 1;
+		">esteves</span>
+
+	<div class="navbar">
+		<h2 class="active">Projects</h2>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		<h2>hello</h2>
+	</div>
+
+	<div id="slider">
+		<ul class="cards-container">
+		</ul>
+	</div>
+	<div id="project" class="card active"></div>
+	<div class="obfuscator"></div>
+	<script src="utils/main.js"></script>
+	<script src="utils/others.js"></script>
+	<canvas></canvas>
+	<script src="utils/background.js"></script>
+</body>
+
+</html>

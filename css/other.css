@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 3.5vh;
+    right: 2vh;
+    z-index: 1;
+}
+
+.navbar h2{
+    color:gray;
+    padding: 0 1vw;
+    transition: 0.5s;
+}
+
+.navbar h2:hover{
+    color:whitesmoke;
+}
+
+.active{
+    color:white !important;
+}
+
+
+@media screen and (max-width: 750px) {
+    .navbar{
+        display: none;
+    }
+}
