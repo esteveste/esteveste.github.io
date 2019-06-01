@@ -10,6 +10,8 @@ var camera = new THREE.OrthographicCamera( width / - 2, width / 2, height / 2, h
 var renderer = new THREE.WebGLRenderer({canvas: canvas});
 renderer.setClearColor(0x000000);
 
+//for css variables
+var bodyStyles = window.getComputedStyle(document.body);
 
 var g1 = new THREE.BoxGeometry(64, 64, 64);
 var g3 = new THREE.BoxGeometry(32, 32, 32);
@@ -114,7 +116,8 @@ function resize() {
 // document.addEventListener('mousemove', onMouseMove, false);
 
 
-const cardMove = 364;//pixels
+
+const cardMove = ()=>getSliderWidth()/(projectsList.length-1);//from MainCard.js
 
 function render(time) {
     // time *= 0.001;
@@ -122,7 +125,7 @@ function render(time) {
     // cube.rotation.x = time;
     // cube.rotation.y = time * 0.31;
     let sliderDist=-parseInt($(".cards-container").css("left"));
-    sliderDist?controls.setRotateLeft(sliderDist/cardMove):controls.setRotateLeft(0);
+    sliderDist?controls.setRotateLeft(sliderDist/cardMove()):controls.setRotateLeft(0);
     controls.update();
     // console.log(sliderDist)
 

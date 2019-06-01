@@ -62,6 +62,7 @@ var dicWithColors = {
 	// "5": ["#32abda", "#fdd4a4"]
 };
 
+
 Number.prototype.roundTo = function(nTo) {
 	nTo = nTo || 10;
 	return Math.round(this * (1 / nTo)) * nTo;
