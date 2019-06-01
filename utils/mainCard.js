@@ -160,7 +160,7 @@ function getSliderWidth() {
 		cards = $(".card"),
 		numberOfSlides = $("#slider ul").children().length - 1,
 		cardGap = viewGap - 2 * getCardMargin(); // 112 - 2*CardMarginRight
-	console.log(cardGap);
+	// console.log(cardGap);
 	if (bodyWidth < 600)
 		return ($("body").width() - getCardMargin() - cardGap) * numberOfSlides;
 	else

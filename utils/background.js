@@ -47,8 +47,9 @@ controls.enableRotate=false;
 
 camera.position.z = 1000;
 
-var particleCount=Math.round((1/6000)*(width*height));
-console.log("Particle count:",(1/6000)*(width*height))
+var particleCount=Math.round((1/60)*(width+height));
+// var particleCount=100;
+console.log("Particle count:",particleCount)
 var particles = [];
 
 var geometries=[g1,g3]
@@ -119,13 +120,15 @@ function resize() {
 
 const cardMove = ()=>getSliderWidth()/(projectsList.length-1);//from MainCard.js
 
+const rotateConst = width<750?1:0.5;
+
 function render(time) {
     // time *= 0.001;
     resize();
     // cube.rotation.x = time;
     // cube.rotation.y = time * 0.31;
     let sliderDist=-parseInt($(".cards-container").css("left"));
-    sliderDist?controls.setRotateLeft(sliderDist/cardMove()):controls.setRotateLeft(0);
+    sliderDist?controls.setRotateLeft(rotateConst*sliderDist/cardMove()):controls.setRotateLeft(0);
     controls.update();
     // console.log(sliderDist)
 
