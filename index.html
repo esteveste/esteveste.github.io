@@ -97,30 +97,7 @@ width: 100%;
 z-index: -5;
 margin-top: 15vh;
 ">
-    <div style="
-/*background-color: red;*/
-height: 10vh;
-margin: 0 20vw;
-padding-top: 20vh;
 
-">
-        <h3  class="a proj" style="
-            font-size: 4vh;
-    color: white;
-    /*position: absolute;*/
-    font-weight: 900;
-    font-family: monospace;
-    text-align: center;
-"><a href="https://esteveste.github.io/Chess_Google_Assistant_Contest/">Chess Mate</a></h3>
-        <h3  class="a proj" style="
-            font-size: 4vh;
-    color: white;
-    /*position: absolute;*/
-    font-weight: 900;
-    font-family: monospace;
-    text-align: center;
-"><a href="https://faceist.herokuapp.com/">Face IST</a></h3>
-</div>
 
 
 
@@ -150,6 +127,11 @@ padding-top: 20vh;
     //         // $('#logo1').fadeIn();
     //     }
     // }
+
+    //FLAGS
+    var COLOR_CHANGE=true;
+    var ROTATE_CHANGE=false;
+
     $('span').on({
         mouseenter: function(){
             isOver = true;
@@ -180,6 +162,7 @@ padding-top: 20vh;
     var windowHalfY = window.innerHeight / 2;
     var cnt = 0;
     var meshes = [];
+    var meshes1 = [];
 
     let group = new THREE.Object3D();
 
@@ -225,6 +208,7 @@ padding-top: 20vh;
             // scene.add( mesh );
 
             meshes[ cnt ] = mesh;
+            meshes1[ cnt ] = mesh1;
             cnt += 1;
 
             group.add(mesh1);
@@ -319,13 +303,20 @@ padding-top: 20vh;
     function draw() {
         requestAnimationFrame( draw );
 
-
-        for ( i = 0; i < cnt; i ++ ) {
-            mesh = meshes[ i ];
-            var time = Date.now() * 0.0005;
-            h = ( 360 * ( 1.0 + time ) % 360 ) / 360;
-            mesh.material.color.setHSL(h, 0.5, 0.5 );
-            //mesh.children[0].materials.color.setHSL(h, 0.5, 0.5 );
+        if(COLOR_CHANGE){
+            for ( i = 0; i < cnt; i ++ ) {
+                mesh = meshes[ i ];
+                var time = Date.now() * 0.0003;
+                h = ( 360 * ( 1.0 + time ) % 360 ) / 360;
+                mesh.material.color.setHSL(h, 0.5, 0.5 );
+                // mesh.children[0].materials.color.setHSL(h, 0.5, 0.5 );
+            }
+        }
+        if(ROTATE_CHANGE){
+            for ( i = 0; i < cnt; i ++ ) {
+                mesh = meshes[ i ];
+                mesh.rotation.x+=0.01;
+            }
         }
         camera.position.x += ( mouseX - camera.position.x ) * .05;
         camera.position.y = THREE.Math.clamp( camera.position.y + ( - ( mouseY - 200 ) - camera.position.y ) * .05, 50, 1000 );
@@ -338,17 +329,72 @@ padding-top: 20vh;
     setup();
     draw();
 
-    let isfaded=false;
-    $(".proj").css("display","none");
-    function changeFade() {
-        if(isfaded){
-            fadeInCanvas();
-            $(".proj").fadeOut(2500);
-        }else {
-            $(".proj").fadeIn(2500);
-            fadeOutCanvas();
+    // let isfaded=false;
+    // $(".proj").css("display","none");
+    // function changeFade() {
+    //     if(isfaded){
+    //         fadeInCanvas();
+    //         $(".proj").fadeOut(2500);
+    //     }else {
+    //         $(".proj").fadeIn(2500);
+    //         fadeOutCanvas();
+    //     }
+    //     isfaded=!isfaded;
+    // }
+
+
+
+    document.addEventListener('mousedown',onDocumentMouseDown,false);
+    // state = 5;
+    state=Math.floor(Math.random()*4);
+    function onDocumentMouseDown(e){
+        e.preventDefault();
+
+        //global changes
+        switch (state) {
+                case 2:
+                COLOR_CHANGE=!COLOR_CHANGE;
+                break;
+                case 3:
+                    ROTATE_CHANGE=!ROTATE_CHANGE;
+                    break;
+            default:
+                break;
         }
-        isfaded=!isfaded;
+
+        for ( i = 0; i < cnt; i ++ ) {
+            mesh = meshes[ i ];
+            mesh1 = meshes1[ i ];
+            // var time = Date.now() * 0.0005;
+            // h = ( Math.floor(Math.random()*360) ) / 360;
+            // mesh.material.color.setHSL(h, 0.5, 0.5 );
+            switch (state) {
+                case 0:
+                    mesh.material.wireframe = !mesh.material.wireframe;
+                    break;
+
+                    case 1:
+                    mesh1.material.wireframe = !mesh1.material.wireframe;
+                    break;
+            
+                    case 2:
+
+                        h = ( Math.floor(Math.random()*360) ) / 360;
+                        mesh.material.color.setHSL(h, 0.5, 0.5 );
+                        // mesh.material.color.setHex(Math.random()*0xffffff);
+                    break;
+
+
+                default:
+                    break;
+            }
+            //mesh.children[0].materials.color.setHSL(h, 0.5, 0.5 );
+        }
+
+        // state=(state+1)%5;
+        state=Math.floor(Math.random()*4);
+        // state=4;
+
     }
 </script>
 </body>
